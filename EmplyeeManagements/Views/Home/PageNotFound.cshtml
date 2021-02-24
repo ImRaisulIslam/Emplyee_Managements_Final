@@ -1,0 +1,23 @@
+﻿@model int
+@{
+    ViewData["Title"] = "PageNotFound";
+}
+
+    <div class="alert alert-danger mt-1 mb-1">
+        <h4> 404 Error: Page Not Found</h4>
+
+        <hr />
+        <h5>
+            Employee ID : @Model
+        </h5>
+
+        <h5>
+            Can Not Found
+        </h5>
+
+        <a class="btn btn-outline-success" asp-controller="Home" asp-action="Index">
+            Back To Employee List
+        </a>
+
+    </div>
+

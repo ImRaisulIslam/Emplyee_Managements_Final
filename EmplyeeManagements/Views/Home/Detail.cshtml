@@ -1,0 +1,48 @@
+﻿@model EmployeeModel;
+@{
+    ViewData["Title"] = "Detail";
+    var photoPath = "~/images/" + (Model.PhotoPath ?? "CSE_logo.JPG");
+}
+
+<div class="container">
+    <div class="align-content-center">
+        <div class="card" style="width: 18rem;">
+
+
+            <img asp-append-version="true" class="card-img-top" style="height:300px; width:auto;" src="@photoPath" alt="Card image cap">
+            <div class="card-body">
+                <div class="align-content-center">
+                    <table class="table">
+
+                        <tbody>
+                            <tr>
+
+                                <td>Name</td>
+                                <td>@Model.Name</td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Email</td>
+                                <td>@Model.Email</td>
+
+                            </tr>
+                            <tr>
+                                <td>Department</td>
+                                <td>@Model.Department</td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+    
+
